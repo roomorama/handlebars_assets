@@ -1,7 +1,6 @@
 module HandlebarsAssets
   class Railtie < ::Rails::Railtie
     config.before_initialize do |app|
-      require 'handlebars'
       require 'handlebars_assets'
       Sprockets::Engines
       Sprockets.register_engine '.hbs', TiltHandlebars
